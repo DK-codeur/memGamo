@@ -29,19 +29,28 @@ class _MainDrawerState extends State<MainDrawer> {
               mainAxisAlignment: MainAxisAlignment.start,
               children: <Widget> [
                 Container(
-                  height: 160,
+                  height: 163,
                   width: double.infinity,
-                  padding: EdgeInsets.all(5),
+                  padding: EdgeInsets.all(3),
                   alignment: Alignment.center,
                   color: Theme.of(context).accentColor,
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: <Widget>[
                       CircleAvatar(
-                        radius: 44,
-                        child: FlutterLogo(
-                          size: 42.0,
-                        )
+                        radius: 60,
+                        backgroundColor: Colors.white12,
+                        child: CircleAvatar(
+                          radius: 52,
+                          backgroundColor: Colors.white24,
+                          child: CircleAvatar(
+                            radius: 44,
+                            // child: FlutterLogo(
+                            //   size: 42.0,
+                            // )
+                            backgroundImage: AssetImage('assets/images/derco.PNG'),
+                          ),
+                        ),
                       ),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,

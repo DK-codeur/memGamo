@@ -1,11 +1,14 @@
 import 'package:memory_game/models/tile_model.dart';
 
 List<TileModel> pairs = new List<TileModel>();
+List<TileModel> visiblePairs = new List<TileModel>();
+
 int points  = 0;
 bool selected = false;
 
 String selectedImageAssetPath = '';
 int selectedTileIndex;
+
 
 List<TileModel> getPaire() {
   List<TileModel> pairs = new List<TileModel>();
